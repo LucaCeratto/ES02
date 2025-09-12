@@ -1,6 +1,6 @@
 ﻿namespace ES02
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         /// Variabile di progettazione necessaria.
