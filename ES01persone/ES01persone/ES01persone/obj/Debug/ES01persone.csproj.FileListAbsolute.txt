@@ -1,0 +1,11 @@
+C:\Users\carla.burdisso\Desktop\4C\ES01persone\ES01persone\bin\Debug\ES01persone.exe.config
+C:\Users\carla.burdisso\Desktop\4C\ES01persone\ES01persone\bin\Debug\ES01persone.exe
+C:\Users\carla.burdisso\Desktop\4C\ES01persone\ES01persone\bin\Debug\ES01persone.pdb
+C:\Users\carla.burdisso\Desktop\4C\ES01persone\ES01persone\obj\Debug\ES01persone.csproj.AssemblyReference.cache
+C:\Users\carla.burdisso\Desktop\4C\ES01persone\ES01persone\obj\Debug\ES01persone.csproj.SuggestedBindingRedirects.cache
+C:\Users\carla.burdisso\Desktop\4C\ES01persone\ES01persone\obj\Debug\ES01persone.frmPersone.resources
+C:\Users\carla.burdisso\Desktop\4C\ES01persone\ES01persone\obj\Debug\ES01persone.Properties.Resources.resources
+C:\Users\carla.burdisso\Desktop\4C\ES01persone\ES01persone\obj\Debug\ES01persone.csproj.GenerateResource.cache
+C:\Users\carla.burdisso\Desktop\4C\ES01persone\ES01persone\obj\Debug\ES01persone.csproj.CoreCompileInputs.cache
+C:\Users\carla.burdisso\Desktop\4C\ES01persone\ES01persone\obj\Debug\ES01persone.exe
+C:\Users\carla.burdisso\Desktop\4C\ES01persone\ES01persone\obj\Debug\ES01persone.pdb
