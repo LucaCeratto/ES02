@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ES02", "ES02\ES02.csproj", "{E4772DC8-F4D8-49F0-802B-EA8D5DF214A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ES02_MVC", "ES02\ES02_MVC.csproj", "{E4772DC8-F4D8-49F0-802B-EA8D5DF214A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

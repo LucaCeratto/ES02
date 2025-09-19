@@ -46,7 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="View\clsAlunni.cs" />
+    <Compile Include="Model\clsAlunni.cs" />
+    <Compile Include="Controller\clsAlunniController.cs" />
+    <Compile Include="View\frmDettaglio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmDettaglio.Designer.cs">
+      <DependentUpon>frmDettaglio.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmMVC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,9 +87,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller\" />
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
