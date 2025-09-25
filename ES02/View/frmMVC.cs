@@ -1,4 +1,5 @@
-﻿using ES02_MVC.Controller;
+﻿using ES02.View;
+using ES02_MVC.Controller;
 using ES02_MVC.Model;
 using System;
 using System.Collections.Generic;
@@ -20,14 +21,31 @@ namespace ES02_MVC.View
         }
 
         string fileAlunni = "alunni.txt";
+
+
         private void frmMVC_Load(object sender, EventArgs e)
         {
             //gestire gli alunni di una scuola mediante MVC con visualizzazione
             //Master/Detail dove l'inserimento e la modifica dei dati verrà gestita con
             //tecnologia multi form e passando parametri tra loro
 
-            clsAlunniController alunniCotroller;
+            clsAlunniController alunniCotroller = new clsAlunniController(fileAlunni);
             clsAlunni alunni;
+
+            dgv.DataSource = alunniCotroller.LeggiAlunni();
+        }
+
+        private void dgv_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex>=0)
+            {
+                clsAlunniController controller = new clsAlunniController(fileAlunni);
+                List<clsAlunni> alunni = controller.LeggiAlunni();
+                frmDettaglio f = new frmDettaglio(alunni[e.RowIndex]);
+                //MessageBox.Show("Prima");
+                f.ShowDialog();
+                //MessageBox.Show("Dopo");
+            }
         }
     }
 }

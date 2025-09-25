@@ -28,10 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // frmDettaglio
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "frmDettaglio";
             this.Text = "frmDettaglio";
+            this.Load += new System.EventHandler(this.frmDettaglio_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ES02_MVC.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,24 @@ namespace ES02.View
 {
     public partial class frmDettaglio : Form
     {
+        clsAlunni alunno = new clsAlunni();
+
+        public frmDettaglio(clsAlunni _alunno)
+        {
+            InitializeComponent();
+            alunno = _alunno;
+        }
+
         public frmDettaglio()
         {
             InitializeComponent();
+        }
+
+        private void frmDettaglio_Load(object sender, EventArgs e)
+        {
+            Label l = new Label();
+            l.Text = "Ciao Ciao";
+            this.Controls.Add(l);
         }
     }
 }

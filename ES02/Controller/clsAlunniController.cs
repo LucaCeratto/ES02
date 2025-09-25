@@ -41,6 +41,9 @@ namespace ES02_MVC.Controller
                 while(!sr.EndOfStream)
                 {
                     clsAlunni Alunno = new clsAlunni();
+
+                    vet = sr.ReadLine().Split(';');
+
                     Alunno.IdAlunno = Convert.ToInt32(vet[0]);
                     Alunno.Nome = vet[1];
                     Alunno.Cognome = vet[2];

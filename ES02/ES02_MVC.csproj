@@ -71,6 +71,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\frmDettaglio.resx">
+      <DependentUpon>frmDettaglio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\frmMVC.resx">
       <DependentUpon>frmMVC.cs</DependentUpon>
     </EmbeddedResource>
