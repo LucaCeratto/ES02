@@ -39,9 +39,7 @@ namespace ES02_MVC.View
         {
             if(e.RowIndex>=0)
             {
-                clsAlunniController controller = new clsAlunniController(fileAlunni);
-                List<clsAlunni> alunni = controller.LeggiAlunni();
-                frmDettaglio f = new frmDettaglio(alunni[e.RowIndex]);
+                frmDettaglio f = new frmDettaglio(clsAlunniController.datiAlunno(e.RowIndex));
                 //MessageBox.Show("Prima");
                 f.ShowDialog();
                 //MessageBox.Show("Dopo");

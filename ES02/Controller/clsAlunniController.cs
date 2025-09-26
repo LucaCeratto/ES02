@@ -14,6 +14,8 @@ namespace ES02_MVC.Controller
     {
         private string nomeFile;
 
+        private static List<clsAlunni> lista = new List<clsAlunni>();
+
         public string NomeFile
         {
             get
@@ -26,6 +28,17 @@ namespace ES02_MVC.Controller
             }
         }
 
+        public List<clsAlunni> Lista
+        {
+            get
+            {
+                return lista;
+            }
+            set
+            {
+                lista = value;
+            }
+        }
         public clsAlunniController(string _nomeFile)
         {
             NomeFile = _nomeFile;
@@ -33,7 +46,7 @@ namespace ES02_MVC.Controller
 
         public List<clsAlunni> LeggiAlunni()
         {
-            List<clsAlunni> lista = new List<clsAlunni>();
+            lista = new List<clsAlunni>();
             if(File.Exists(NomeFile))
             {
                 StreamReader sr = new StreamReader(NomeFile);
@@ -79,6 +92,11 @@ namespace ES02_MVC.Controller
             alunni = alunno.IdAlunno.ToString() + ";" + alunno.Nome + ";" + alunno.Cognome + ";" + alunno.DataNascita.ToShortDateString() + ";" + alunno.Icdl.ToString();
             sw.WriteLine(alunni);
             sw.Close ();
+        }
+
+        public static clsAlunni datiAlunno(int rowIndex)
+        {
+            return lista[rowIndex];
         }
     }
 }

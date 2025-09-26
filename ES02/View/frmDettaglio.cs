@@ -28,9 +28,16 @@ namespace ES02.View
 
         private void frmDettaglio_Load(object sender, EventArgs e)
         {
-            Label l = new Label();
-            l.Text = "Ciao Ciao";
-            this.Controls.Add(l);
+            this.Text = alunno.Cognome + "Dettaglio";
+
+            txtId.Text = alunno.IdAlunno.ToString();
+            txtNome.Text = alunno.Nome;
+            txtCognome.Text = alunno.Cognome;
+            txtData.Text = alunno.DataNascita.ToShortDateString();
+            if(alunno.Icdl)
+            {
+                chkIcdl.Checked = true;
+            }
         }
     }
 }
