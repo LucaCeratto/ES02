@@ -15,10 +15,11 @@ namespace ES02.View
     {
         clsAlunni alunno = new clsAlunni();
 
-        public frmDettaglio(clsAlunni _alunno)
+        public frmDettaglio(clsAlunni _alunno,int _prova)
         {
             InitializeComponent();
             alunno = _alunno;
+            _prova = 77;
         }
 
         public frmDettaglio()

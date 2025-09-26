@@ -1,3 +1,5 @@
 id;nome;cognome;dataDiNascita;icdl
 1;Marco;Monasterolo;13/04/2008;true
 2;Luca;Ceratto;12/08/2008;false
+3;Andrea;Rapalino;01/07/2008;false
+4;Stefano;Testa;25/09/2008;true

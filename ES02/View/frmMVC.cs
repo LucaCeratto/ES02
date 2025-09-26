@@ -1,4 +1,5 @@
-﻿using ES02.View;
+﻿using ES02.Model;
+using ES02.View;
 using ES02_MVC.Controller;
 using ES02_MVC.Model;
 using System;
@@ -39,11 +40,36 @@ namespace ES02_MVC.View
         {
             if(e.RowIndex>=0)
             {
-                frmDettaglio f = new frmDettaglio(clsAlunniController.datiAlunno(e.RowIndex));
-                //MessageBox.Show("Prima");
-                f.ShowDialog();
-                //MessageBox.Show("Dopo");
+                if (chkMod.Checked)
+                {
+                    chkModifica(e.RowIndex);
+                }
+                else
+                {
+                    dettaglio(e.RowIndex);
+                }
+
             }
+        }
+
+        private void dettaglio(int rowIndex)
+        {
+            int prova = 0;
+            frmDettaglio f = new frmDettaglio(clsAlunniController.datiAlunno(rowIndex), prova);
+            //MessageBox.Show("Prima prova: " + prova.ToString());
+            f.ShowDialog();
+            //MessageBox.Show("Seconda prova: " + prova.ToString());
+            //Se nel costruttore viene passato un oggetto (vettore)
+            //ossia il puntatore, questo viene modificato, perché
+            //non viene creata una copia, invece se passo una variabile semplice non viene modificata
+            //perché crea una copia
+        }
+
+            private void chkModifica(int rowIndex)
+        {
+            frmModifica f = new frmModifica();
+            f.Alunno = clsAlunniController.datiAlunno(rowIndex);
+            f.ShowDialog();
         }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.dgv = new System.Windows.Forms.DataGridView();
+            this.chkMod = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,23 +48,37 @@
             this.dgv.TabIndex = 0;
             this.dgv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellClick);
             // 
+            // chkModifica
+            // 
+            this.chkMod.AutoSize = true;
+            this.chkMod.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkMod.Location = new System.Drawing.Point(24, 432);
+            this.chkMod.Name = "chkMod";
+            this.chkMod.Size = new System.Drawing.Size(247, 36);
+            this.chkMod.TabIndex = 1;
+            this.chkMod.Text = "Apri in Modifica";
+            this.chkMod.UseVisualStyleBackColor = true;
+            // 
             // frmMVC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1189, 602);
+            this.Controls.Add(this.chkMod);
             this.Controls.Add(this.dgv);
             this.Name = "frmMVC";
             this.Text = "Gestione Alunni MVC";
             this.Load += new System.EventHandler(this.frmMVC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.DataGridView dgv;
+        private System.Windows.Forms.CheckBox chkMod;
     }
 }
 
